@@ -1,4 +1,4 @@
-package com.bh.android.mysample.ui.main
+package com.bh.android.mysample
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.bh.android.mysample.databinding.RoutingFragmentBinding
-import com.bh.android.mysample.ui.main.common.RoutingListAdapter
+import com.bh.android.mysample.viewmodel.RoutingFragmentViewModel
+import com.bh.android.mysample.adapters.RoutingListAdapter
 
 class RoutingFragment : Fragment() {
 

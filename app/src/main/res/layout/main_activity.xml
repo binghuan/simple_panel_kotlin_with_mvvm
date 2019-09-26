@@ -13,7 +13,7 @@
         android:minHeight="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ui.main.RoutingFragment" />
+        tools:context=".RoutingFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

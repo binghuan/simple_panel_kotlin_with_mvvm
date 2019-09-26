@@ -2,7 +2,6 @@ package com.bh.android.mysample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bh.android.mysample.ui.main.RoutingFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, RoutingFragment.newInstance())
+                .replace(R.id.container,
+                    RoutingFragment.newInstance()
+                )
                 .commitNow()
         }
     }

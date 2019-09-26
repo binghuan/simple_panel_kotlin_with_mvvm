@@ -9,7 +9,7 @@
 
         <variable
             name="route"
-            type="com.bh.android.mysample.ui.main.vo.Route" />
+            type="com.bh.android.mysample.data.Route" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

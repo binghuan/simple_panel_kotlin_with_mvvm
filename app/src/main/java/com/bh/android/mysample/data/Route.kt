@@ -1,4 +1,4 @@
-package com.bh.android.mysample.ui.main.vo
+package com.bh.android.mysample.data
 
 data class Route(
     var type: Int = 1,

@@ -1,8 +1,8 @@
-package com.bh.android.mysample.ui.main
+package com.bh.android.mysample.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.bh.android.mysample.ui.main.vo.Route
+import com.bh.android.mysample.data.Route
 
 class RoutingFragmentViewModel : ViewModel() {
 

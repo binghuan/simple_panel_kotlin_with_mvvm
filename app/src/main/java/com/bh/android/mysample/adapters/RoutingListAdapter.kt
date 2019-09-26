@@ -1,4 +1,4 @@
-package com.bh.android.mysample.ui.main.common
+package com.bh.android.mysample.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bh.android.mysample.R
 import com.bh.android.mysample.databinding.RoutingItemBinding
-import com.bh.android.mysample.ui.main.vo.Route
+import com.bh.android.mysample.data.Route
 
 class RoutingListAdapter(
     private val deleteButtonClickCallback: ((Route) -> Unit)?
