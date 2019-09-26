@@ -17,7 +17,7 @@ class RoutingFragment : Fragment() {
     }
 
     private lateinit var viewModel: RoutingFragmentViewModel
-    lateinit var binding: RoutingFragmentBinding
+    private lateinit var binding: RoutingFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,17 +29,12 @@ class RoutingFragment : Fragment() {
 
         binding = RoutingFragmentBinding.inflate(inflater, container, false)
         context ?: return binding.root
-        val adapter = RoutingListAdapter() { route ->
+        val adapter = RoutingListAdapter { route ->
             viewModel.deleteStop(route)
         }
         binding.routeList.adapter = adapter
 
-//        binding.addPlant.setOnClickListener {
-//            navigateToPlantListPage()
-//        }
-
-
-        binding.buttonExpand.setOnClickListener({ view -> viewModel.openRoutingPanel() })
+        binding.buttonExpand.setOnClickListener { view -> viewModel.openRoutingPanel() }
         binding.buttonClosePanel.setOnClickListener({ view -> viewModel.closeRoutingPanel() })
         binding.buttonAdd.setOnClickListener({ view -> viewModel.addNewStop() })
 

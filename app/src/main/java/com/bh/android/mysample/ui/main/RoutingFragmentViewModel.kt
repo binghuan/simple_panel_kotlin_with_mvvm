@@ -1,18 +1,16 @@
 package com.bh.android.mysample.ui.main
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.bh.android.mysample.ui.main.vo.Route
 
 class RoutingFragmentViewModel : ViewModel() {
 
-    var routeList: MutableLiveData<List<Route>> = MutableLiveData<List<Route>>()
+    var routeList: MutableLiveData<List<Route>> = MutableLiveData()
     var isExpanded: MutableLiveData<Boolean> = MutableLiveData()
 
     fun createRoutingList() {
-        var dataList = ArrayList<Route>()
+        val dataList = ArrayList<Route>()
         dataList.add(Route(1, "南京東路2段"))
         dataList.add(Route(2, "濱江路3段"))
 
